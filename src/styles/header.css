@@ -19,18 +19,22 @@
 
 }
 .header button{
-    background-color: #555A88;
+    background-color: rgba(2,151,186,1);
     color: #fff;
     font-family: inherit;
     font-weight: 900;
     font-size: 1em;
     border: none;
     padding: 0.5em 1em;
-    transition: 0.3s ease-in;
+    transition: .5s ease;
+    border-radius: 1rem;
 }
 
 .header button:hover{
-    background-color: #474292;
+     scale: calc(1.1);
+     background-color: transparent;
+     color: black;
+     box-shadow: 0 0 2rem rgba(2,151,186,1);
 }
 
 @media (min-width: 1024px) {

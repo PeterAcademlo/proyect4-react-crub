@@ -14,6 +14,7 @@
 hr {
   opacity: 0.5;
   margin: 1.5em 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .ul {
@@ -22,7 +23,7 @@ hr {
 }
 
 .li {
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace;
   display: grid;
   gap: 0.3em;
   color: gray;
@@ -49,12 +50,13 @@ hr {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.596);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   position: relative;
+  border-radius: 5px;
 }
 
 
 .button__trash:hover {
   transform: scale(1.1);
-  background-color: rgb(255, 17, 0);
+  background-color: rgb(241, 108, 0);
 }
 
 .button__trash:hover .tooltip-one{
@@ -73,6 +75,7 @@ hr {
   background-color: rgb(54, 76, 173);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.596);
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-radius: 5px;
 }
 
 .button__edit:hover {

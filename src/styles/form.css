@@ -33,7 +33,7 @@
     display: grid;
     gap: 1em;
     font-size: 1.4em;
-    font-family: inherit;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 600;
     box-shadow: 10px 10px 7px 5px rgba(0, 0, 0, 0.596);
     border-radius: 0.4em;

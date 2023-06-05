@@ -5,7 +5,9 @@
 
 body{
     margin: 0;
-    background-color: rebeccapurple;
+    background: rgb(1,0,0);
+    background: linear-gradient(0deg, rgba(1,0,0,1) 0%, rgba(2,151,186,1) 57%);
+    background-attachment: fixed;
     color: #0F0F2D;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

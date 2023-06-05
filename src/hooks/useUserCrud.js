@@ -5,25 +5,25 @@ const useUserCrud = () => {
 
     const [users, setUsers] = useState();
 
-    const url = 'https://users-crud.academlo.tech/users/'
+    const url = "https://proyect2-nodejs.onrender.com/api/v1"
 
-    //Get
+    //GET
     const getAllUsers = () => {
-        axios.get(url)
+        axios.get(`${url}/users`)
         .then(res => setUsers(res.data))
         .catch(err => console.log(err))
     }
 
     //POST 
     const createNewUser = data => {
-        axios.post(url, data)
+        axios.post(`${url}/users`, data)
         .then(() => getAllUsers())
         .catch(err => console.log(err))
     }
 
     //DELETE
     const deleteUserById = id => {
-        const urlDelete = `${url}${id}/`
+        const urlDelete = `${url}/users/${id}`
 
         axios.delete(urlDelete)
         .then(() => getAllUsers())
@@ -32,7 +32,7 @@ const useUserCrud = () => {
 
     //UPDATE
     const updateUserById = (id, data) => {
-        const urlUpdate = `${url}${id}/`
+        const urlUpdate = `${url}/users/${id}`
 
         axios.patch(urlUpdate, data)
         .then(() => getAllUsers())
